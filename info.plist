@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>fish shell</string>
+	<key>ordering</key>
+	<array>
+		<string>EC263F13-E36B-4EF3-A8D4-9F0EE8077A95</string>
+		<string>9CA6DB6F-A16F-4836-A058-617C7378775D</string>
+		<string>FFA7DDC9-0F63-4E8F-AA98-BF2BF28B9A5A</string>
+	</array>
+	<key>uuid</key>
+	<string>EDC33BD4-0B8D-4EE2-8684-F00A4F91FF4A</string>
+</dict>
+</plist>
