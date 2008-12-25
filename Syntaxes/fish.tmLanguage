@@ -7,9 +7,9 @@
 		<string>fish</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>/\*\*|\{\s*$</string>
+	<string>^\s*(function|while|if|switch|for)\s.*$</string>
 	<key>foldingStopMarker</key>
-	<string>\*\*/|^\s*\}</string>
+	<string>^\s*end\s*$</string>
 	<key>keyEquivalent</key>
 	<string>^~F</string>
 	<key>name</key>
@@ -106,7 +106,7 @@
 			<key>comment</key>
 			<string>control structures requiring an end</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(function|while|if|else|switch|for|in|end|)\b(?![?!])</string>
+			<string>(?&lt;!\.)\b(function|while|if|else|switch|for|in|end)\b(?![?!])</string>
 			<key>name</key>
 			<string>keyword.control.fish</string>
 		</dict>
