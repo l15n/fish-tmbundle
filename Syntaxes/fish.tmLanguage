@@ -49,6 +49,10 @@
 					<key>name</key>
 					<string>constant.character.escape.fish</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -84,6 +88,10 @@
 					<key>name</key>
 					<string>constant.character.escape.fish</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -110,7 +118,133 @@
 			<key>name</key>
 			<string>keyword.control.fish</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)\b(
+			\.|
+			and|
+			begin|
+			bg|
+			bind|
+			block|
+			break|
+			breakpoint|
+			builtin|
+			case|
+			cd|
+			command|
+			commandline|
+			complete|
+			contains|
+			continue|
+			count|
+			else|
+			emit|
+			end|
+			exec|
+			exit|
+			fg|
+			for|
+			function|
+			functions|
+			if|
+			jobs|
+			not|
+			or|
+			random|
+			read|
+			return|
+			set|
+			status|
+			switch|
+			ulimit|
+			while
+			)\b</string>
+			<key>name</key>
+			<string>support.function.builtin.fish</string>
+		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>variable</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.variable.fish</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\$)[a-zA-Z_][a-zA-Z0-9_]*</string>
+					<key>name</key>
+					<string>variable.other.normal</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.variable.fish</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(?x)(\$)(BROWSER|CDPATH|fish_greeting|LANG|LC_ALL|LC_COLLATE|
+									LC_CTYPE|LC_MESSAGES|LC_MONETARY|LC_NUMERIC|LC_TIME|PATH|
+									umask|fish_.*)</string>
+					<key>name</key>
+					<string>variable.other.special.shell</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.variable.fish</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\$)(_|argv|history|HOME|PWD|status|USER)</string>
+					<key>name</key>
+					<string>variable.other.fixed.shell</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.variable.fish</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\$)__(fish|FISH)[a-zA-Z_][a-zA-Z0-9_]*</string>
+					<key>name</key>
+					<string>variable.other.fish.shell</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.variable.fish</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\$)[a-zA-Z_][a-zA-Z0-9_]*</string>
+					<key>name</key>
+					<string>variable.other.normal.shell</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.fish</string>
 	<key>uuid</key>
