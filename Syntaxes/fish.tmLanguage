@@ -125,6 +125,30 @@
 			<string>keyword.control.fish</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\|</string>
+			<key>name</key>
+			<string>keyword.operator.pipe.fish</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>IO Redirection</string>
+			<key>match</key>
+			<string>(?x:
+			&lt;|				# Standard Input
+			(&gt;|\^|&gt;&gt;|\^\^)(&amp;[012-])?| # Redirection of stdout/stderr
+			[012](&lt;|&gt;|&gt;&gt;)(&amp;[012-])? # Redirect input/output of file descriptors
+			)</string>
+			<key>name</key>
+			<string>keyword.operator.redirect.fish</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&amp;</string>
+			<key>name</key>
+			<string>keyword.operator.background.fish</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>builtin shellscript functions</string>
 			<key>match</key>
