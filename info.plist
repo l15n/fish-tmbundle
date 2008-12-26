@@ -6,9 +6,16 @@
 	<string>fish shell</string>
 	<key>ordering</key>
 	<array>
-		<string>EC263F13-E36B-4EF3-A8D4-9F0EE8077A95</string>
 		<string>9CA6DB6F-A16F-4836-A058-617C7378775D</string>
 		<string>FFA7DDC9-0F63-4E8F-AA98-BF2BF28B9A5A</string>
+		<string>EC263F13-E36B-4EF3-A8D4-9F0EE8077A95</string>
+		<string>822BD8F0-19A7-4D83-9503-6267A8442B60</string>
+		<string>DFB65488-C0D2-475D-89A6-6451E5EF76C4</string>
+		<string>1A972AE7-147C-45B5-8A7E-7655585BD59D</string>
+		<string>526521B9-F9DE-4144-B405-E1A2B803A351</string>
+		<string>788CD946-7CC5-4448-AAE8-B01E6117896E</string>
+		<string>A6FDE04C-EDA6-4196-905C-521B24F8F34C</string>
+		<string>410367B4-8CF1-487C-AC82-93C7508F67EC</string>
 	</array>
 	<key>uuid</key>
 	<string>EDC33BD4-0B8D-4EE2-8684-F00A4F91FF4A</string>
