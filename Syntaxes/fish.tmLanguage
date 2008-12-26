@@ -142,8 +142,8 @@
 			<key>match</key>
 			<string>(?x:
 			&lt;|				# Standard Input
-			(&gt;|\^|&gt;&gt;|\^\^)(&amp;[012-])?| # Redirection of stdout/stderr
-			[012](&lt;|&gt;|&gt;&gt;)(&amp;[012-])? # Redirect input/output of file descriptors
+			(&gt;|\^|&gt;&gt;|\^\^)(&amp;[012\-])?| # Redirection of stdout/stderr
+			[012](&lt;|&gt;|&gt;&gt;)(&amp;[012\-])? # Redirect input/output of file descriptors
 			)</string>
 			<key>name</key>
 			<string>keyword.operator.redirect.fish</string>
@@ -159,6 +159,14 @@
 			<string>\*\*|\*|\?</string>
 			<key>name</key>
 			<string>keyword.operator.glob.fish</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>command short/long options</string>
+			<key>match</key>
+			<string>\s(-{1,2}[a-zA-Z_\-0-9]+|-\w)\b</string>
+			<key>name</key>
+			<string>keyword.other.option.fish</string>
 		</dict>
 		<dict>
 			<key>comment</key>
