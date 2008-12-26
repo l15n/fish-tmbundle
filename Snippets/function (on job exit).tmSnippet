@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name}${2: -d "${3:description}"}
+	<string>function -j ${1:PID} ${2:event_handler_name}${3: -d "${4:description}"}
 	$0
 end</string>
 	<key>name</key>
-	<string>function ... end</string>
+	<string>function (on job exit)</string>
 	<key>scope</key>
 	<string>source.fish</string>
 	<key>tabTrigger</key>
-	<string>fun</string>
+	<string>funj</string>
 	<key>uuid</key>
-	<string>EC263F13-E36B-4EF3-A8D4-9F0EE8077A95</string>
+	<string>3258ACED-81ED-4F85-ACF1-F5E2786F4F39</string>
 </dict>
 </plist>

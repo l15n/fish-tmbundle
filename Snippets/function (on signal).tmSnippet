@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name}${2: -d "${3:description}"}
-	$0
+	<string>function -s ${1:SIGSPEC} ${2:event_handler_name}${3: -d "${4:description}"}	$0	
 end</string>
 	<key>name</key>
-	<string>function ... end</string>
+	<string>function (on signal)</string>
 	<key>scope</key>
 	<string>source.fish</string>
 	<key>tabTrigger</key>
-	<string>fun</string>
+	<string>funs</string>
 	<key>uuid</key>
-	<string>EC263F13-E36B-4EF3-A8D4-9F0EE8077A95</string>
+	<string>4B995A66-08C5-4AD5-A0E6-6595C7D0DA57</string>
 </dict>
 </plist>
