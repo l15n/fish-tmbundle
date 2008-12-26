@@ -149,6 +149,12 @@
 			<string>keyword.operator.background.fish</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\*\*|\*|\?</string>
+			<key>name</key>
+			<string>keyword.operator.glob.fish</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>builtin shellscript functions</string>
 			<key>match</key>
