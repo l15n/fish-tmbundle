@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>complete -c ${1:command}${2: -n '${3:condition}'}${4: -s ${5:short_option}} ${6: -o ${7:oldstyle_long_option}}${8: -a ${9:OPTION_ARGUMENTS}}${10: --description '${11:description}'}
+$0</string>
+	<key>name</key>
+	<string>complete (old-style options)</string>
+	<key>scope</key>
+	<string>source.fish</string>
+	<key>tabTrigger</key>
+	<string>com</string>
+	<key>uuid</key>
+	<string>EB37554A-4961-492E-8143-080D6A11F3C0</string>
+</dict>
+</plist>
