@@ -6,6 +6,8 @@
 	<array>
 		<string>fish</string>
 	</array>
+	<key>firstLineMatch</key>
+	<string>^#!.*(fish)</string>
 	<key>foldingStartMarker</key>
 	<string>^\s*(function|while|if|switch|for)\s.*$</string>
 	<key>foldingStopMarker</key>
@@ -119,49 +121,55 @@
 			<string>keyword.control.fish</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>builtin shellscript functions</string>
 			<key>match</key>
 			<string>(?x)\b(
-			\.|
-			and|
-			begin|
-			bg|
-			bind|
-			block|
-			break|
-			breakpoint|
-			builtin|
-			case|
-			cd|
-			command|
-			commandline|
-			complete|
-			contains|
-			continue|
-			count|
-			else|
-			emit|
-			end|
-			exec|
-			exit|
-			fg|
-			for|
-			function|
-			functions|
-			if|
-			jobs|
-			not|
-			or|
-			random|
-			read|
-			return|
-			set|
-			status|
-			switch|
-			ulimit|
-			while
+			_|__fish_append|__fish_bind_test1|__fish_bind_test2|__fish_commandline_test|
+			__fish_complete_ant_targets|__fish_complete_bittorrent|__fish_complete_cd|
+			__fish_complete_command|__fish_complete_directories|__fish_complete_file_url|
+			__fish_complete_groups|__fish_complete_ls|__fish_complete_man|
+			__fish_complete_mime|__fish_complete_pids|__fish_complete_ssh|
+			__fish_complete_subcommand|__fish_complete_subcommand_root|
+			__fish_complete_suffix|__fish_complete_tar|__fish_complete_tex|
+			__fish_complete_unrar|__fish_complete_users|__fish_complete_vi|
+			__fish_config_interactive|__fish_contains_opt|__fish_crux_packages|
+			__fish_describe_command|__fish_filter_ant_targets|__fish_filter_mime|
+			__fish_gnu_complete|__fish_is_first_token|__fish_list_current_token|
+			__fish_move_last|__fish_no_arguments|__fish_not_contain_opt|__fish_paginate|
+			__fish_ports_dirs|__fish_print_addresses|__fish_print_encodings|
+			__fish_print_filesystems|__fish_print_function_prototypes|__fish_print_help|
+			__fish_print_hostnames|__fish_print_interfaces|__fish_print_make_targets|
+			__fish_print_packages|__fish_print_users|__fish_prt_no_subcommand|
+			__fish_prt_packages|__fish_prt_ports|__fish_prt_use_package|
+			__fish_prt_use_port|__fish_reload_key_bindings|__fish_repaint|
+			__fish_repaint_root|__fish_seen_subcommand_from|__fish_test_arg|
+			__fish_use_subcommand|__fish_winch_handler|alias|cd|delete-or-exit|dirh|
+			dirs|down-or-search|eval|fish_default_key_bindings|fish_on_exit|
+			fish_prompt|fish_sigtrap_handler|funced|funcsave|grep|help|isatty|la|ll|
+			ls|math|N_|nextd|nextd-or-forward-word|open|popd|prevd|
+			prevd-or-backward-word|prompt_pwd|psub|pushd|pwd|setenv|sgrep|trap|type|
+			umask|up-or-search|vared
+			)\b</string>
+			<key>name</key>
+			<string>support.function.script.fish</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>builtin commands listed by builtin -n</string>
+			<key>match</key>
+			<string>(?x)\b(
+			\.|and|begin|bg|bind|block|break|breakpoint|builtin|case|cd|command|
+			commandline|complete|contains|continue|count|else|emit|end|exec|exit|
+			fg|for|function|functions|if|jobs|not|or|random|read|return|set|
+			status|switch|ulimit|while
 			)\b</string>
 			<key>name</key>
 			<string>support.function.builtin.fish</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#variable</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -180,25 +188,17 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(\$)[a-zA-Z_][a-zA-Z0-9_]*</string>
-					<key>name</key>
-					<string>variable.other.normal</string>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.variable.fish</string>
-						</dict>
-					</dict>
-					<key>match</key>
 					<string>(?x)(\$)(BROWSER|CDPATH|fish_greeting|LANG|LC_ALL|LC_COLLATE|
 									LC_CTYPE|LC_MESSAGES|LC_MONETARY|LC_NUMERIC|LC_TIME|PATH|
-									umask|fish_.*)</string>
+									umask|fish_color_command|fish_color_comment|fish_color_cwd|fish_color_cwd_root|
+									fish_color_error|fish_color_escape|fish_color_history_current|
+									fish_color_match|fish_color_normal|fish_color_operator|fish_color_quote|
+									fish_color_redirection|fish_color_search_match|fish_color_valid_path|
+									fish_complete_path|fish_function_path|fish_greeting|fish_key_bindings|
+									fish_pager_color_completion|fish_pager_color_description|
+									fish_pager_color_prefix|fish_pager_color_progress)</string>
 					<key>name</key>
-					<string>variable.other.special.shell</string>
+					<string>variable.other.special.fish</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -212,7 +212,7 @@
 					<key>match</key>
 					<string>(\$)(_|argv|history|HOME|PWD|status|USER)</string>
 					<key>name</key>
-					<string>variable.other.fixed.shell</string>
+					<string>variable.other.fixed.fish</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -226,7 +226,7 @@
 					<key>match</key>
 					<string>(\$)__(fish|FISH)[a-zA-Z_][a-zA-Z0-9_]*</string>
 					<key>name</key>
-					<string>variable.other.fish.shell</string>
+					<string>variable.other.fish.fish</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -240,7 +240,7 @@
 					<key>match</key>
 					<string>(\$)[a-zA-Z_][a-zA-Z0-9_]*</string>
 					<key>name</key>
-					<string>variable.other.normal.shell</string>
+					<string>variable.other.normal.fish</string>
 				</dict>
 			</array>
 		</dict>
