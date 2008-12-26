@@ -126,6 +126,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(?&lt;!\.)\bfunction\b(?![?!])</string>
+			<key>name</key>
+			<string>storage.type.fish</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\|</string>
 			<key>name</key>
 			<string>keyword.operator.pipe.fish</string>
