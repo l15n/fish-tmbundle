@@ -161,12 +161,18 @@
 			<string>keyword.operator.glob.fish</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.other.option.fish</string>
+				</dict>
+			</dict>
 			<key>comment</key>
 			<string>command short/long options</string>
 			<key>match</key>
 			<string>\s(-{1,2}[a-zA-Z_\-0-9]+|-\w)\b</string>
-			<key>name</key>
-			<string>string.other.option.fish</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -207,7 +213,7 @@
 			<string>builtin commands listed by builtin -n</string>
 			<key>match</key>
 			<string>(?x)\b(
-			\.|and|begin|bg|bind|block|break|breakpoint|builtin|case|cd|command|
+			\s\.\s|and|begin|bg|bind|block|break|breakpoint|builtin|case|cd|command|
 			commandline|complete|contains|continue|count|else|emit|end|exec|exit|
 			fg|for|function|functions|if|jobs|not|or|random|read|return|set|
 			status|switch|ulimit|while
