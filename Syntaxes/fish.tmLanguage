@@ -166,7 +166,7 @@
 			<key>match</key>
 			<string>\s(-{1,2}[a-zA-Z_\-0-9]+|-\w)\b</string>
 			<key>name</key>
-			<string>keyword.other.option.fish</string>
+			<string>string.other.option.fish</string>
 		</dict>
 		<dict>
 			<key>comment</key>
