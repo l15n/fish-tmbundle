@@ -356,7 +356,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(\$)(_|argv|history|HOME|PWD|status|USER)</string>
+					<string>(\$)(_|argv|history|HOME|PWD|status|USER)\b</string>
 					<key>name</key>
 					<string>variable.other.fixed.fish</string>
 				</dict>
