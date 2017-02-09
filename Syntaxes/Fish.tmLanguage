@@ -284,8 +284,8 @@
 				</dict>
 				<dict>
 					<key>comment</key>
-					<string>escapes a byte of data with the specified value (hexadecimal). 
-					If you are using a mutibyte encoding, this can be used to enter invalid strings. 
+					<string>escapes a byte of data with the specified value (hexadecimal).
+					If you are using a mutibyte encoding, this can be used to enter invalid strings.
 					Only use this if you know what you are doing.</string>
 					<key>match</key>
 					<string>\\X[0-9a-fA-F]{2}</string>
