@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!usr/bin/env ruby18
+
+# -- Imports -------------------------------------------------------------------
+
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/fish_indent'
+
+# -- Main ----------------------------------------------------------------------
+
+FishIndent.reformat
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^H</string>
+	<key>name</key>
+	<string>Reformat Document</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+  <key>requiredCommands</key>
+  	<array>
+  		<dict>
+  			<key>command</key>
+  			<string>fish_indent</string>
+  			<key>locations</key>
+  			<array>
+  				<string>/usr/local/bin/fish_indent</string>
+  			</array>
+  			<key>moreInfoURL</key>
+  			<string>http://fishshell.com/docs/current/commands.html#fish_indent</string>
+  			<key>variable</key>
+  			<string>TM_FISH_INDENT</string>
+  		</dict>
+  	</array>
+	<key>scope</key>
+	<string>source.fish</string>
+	<key>uuid</key>
+	<string>AF2C2749-1700-42D9-8BFE-91AA1854369B</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
