@@ -178,7 +178,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>builtin shellscript functions</string>
+			<string>builtin shell-script functions</string>
 			<key>match</key>
 			<string>(?x)\b(
 			_|__fish_append|__fish_bind_test1|__fish_bind_test2|__fish_commandline_test|
@@ -281,7 +281,7 @@
 				<dict>
 					<key>comment</key>
 					<string>escapes a byte of data with the specified value (hexadecimal).
-					If you are using a mutibyte encoding, this can be used to enter invalid strings.
+					If you are using a multibyte encoding, this can be used to enter invalid strings.
 					Only use this if you know what you are doing.</string>
 					<key>match</key>
 					<string>\\X[0-9a-fA-F]{2}</string>
