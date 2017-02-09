@@ -8,10 +8,6 @@
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!.*(fish)</string>
-	<key>foldingStartMarker</key>
-	<string>^\s*(function|while|if|switch|for)\s.*$</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*end\s*$</string>
 	<key>keyEquivalent</key>
 	<string>^~F</string>
 	<key>name</key>
