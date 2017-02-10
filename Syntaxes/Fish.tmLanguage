@@ -119,18 +119,48 @@
 			<string>comment.line.number-sign.fish</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>(?&lt;!\.)\b(function)\s+(\S+)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.function.fish</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.fish</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?&lt;!\.)\bend\b(?![?!])</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.fish</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.fish</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>control structures requiring an end</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(function|while|if|else|switch|for|in|end)\b(?![?!])</string>
+			<string>(?&lt;!\.)\b(while|if|else|switch|for|in|end)\b(?![?!])</string>
 			<key>name</key>
 			<string>keyword.control.fish</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\bfunction\b(?![?!])</string>
-			<key>name</key>
-			<string>storage.type.fish</string>
 		</dict>
 		<dict>
 			<key>match</key>
