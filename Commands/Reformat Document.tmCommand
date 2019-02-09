@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
-	<string>saveActiveFile</string>
+	<string>nop</string>
 	<key>command</key>
 	<string>#!usr/bin/env ruby18
 
@@ -29,23 +29,25 @@ FishIndent.reformat
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>discard</string>
-  <key>requiredCommands</key>
-  	<array>
-  		<dict>
-  			<key>command</key>
-  			<string>fish_indent</string>
-  			<key>locations</key>
-  			<array>
-  				<string>/usr/local/bin/fish_indent</string>
-  			</array>
-  			<key>moreInfoURL</key>
-  			<string>http://fishshell.com/docs/current/commands.html#fish_indent</string>
-  			<key>variable</key>
-  			<string>TM_FISH_INDENT</string>
-  		</dict>
-  	</array>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>fish_indent</string>
+			<key>locations</key>
+			<array>
+				<string>/usr/local/bin/fish_indent</string>
+			</array>
+			<key>moreInfoURL</key>
+			<string>http://fishshell.com/docs/current/commands.html#fish_indent</string>
+			<key>variable</key>
+			<string>TM_FISH_INDENT</string>
+		</dict>
+	</array>
 	<key>scope</key>
 	<string>source.fish</string>
+	<key>semanticClass</key>
+	<string>callback.document.did-save</string>
 	<key>uuid</key>
 	<string>AF2C2749-1700-42D9-8BFE-91AA1854369B</string>
 	<key>version</key>
