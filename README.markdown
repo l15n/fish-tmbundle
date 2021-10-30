@@ -1,15 +1,25 @@
-fish TextMate Bundle
---------------------
+# Fish TextMate Bundle
 
-For the [fish shell](http://www.fishshell.org/).
+This [TextMate][] bundle provides support for the  [friendly interactive shell](http://www.fishshell.com).
 
-Installation
-============
+[TextMate]: https://github.com/textmate/textmate
 
-To install via Git:
+## Installation
 
-		cd ~/"Library/Application Support/TextMate/Bundles/"
-		git clone git://github.com/l15n/fish-tmbundle.git "fish.tmbundle"
-		osascript -e 'tell app "TextMate" to reload bundles'
+### TextMate 2
 
-Alternatively, install using the GetBundles TextMate bundle.
+```sh
+mkdir -p ~/"Library/Application Support/Avian/Bundles/"
+cd ~/"Library/Application Support/Avian/Bundles/"
+git clone git://github.com/l15n/fish-tmbundle.git "Fish.tmbundle"
+```
+
+### TextMate 1
+
+```sh
+cd ~/"Library/Application Support/TextMate/Bundles/"
+git clone git://github.com/l15n/fish-tmbundle.git "Fish.tmbundle"
+osascript -e 'tell app "TextMate" to reload bundles'
+```
+
+Alternatively, you can also install this bundle using the GetBundles TextMate bundle.

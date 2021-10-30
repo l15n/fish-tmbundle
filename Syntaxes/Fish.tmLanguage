@@ -8,16 +8,18 @@
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!.*(fish)</string>
-	<key>foldingStartMarker</key>
-	<string>^\s*(function|while|if|switch|for)\s.*$</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*end\s*$</string>
 	<key>keyEquivalent</key>
 	<string>^~F</string>
 	<key>name</key>
-	<string>fish</string>
+	<string>Fish</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>match</key>
+			<string>\\.</string>
+			<key>name</key>
+			<string>constant.character.escape.fish</string>
+		</dict>
 		<dict>
 			<key>begin</key>
 			<string>"</string>
@@ -117,18 +119,48 @@
 			<string>comment.line.number-sign.fish</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>(?&lt;!\.)\b(function)\s+(\S+)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.function.fish</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.fish</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?&lt;!\.)\bend\b(?![?!])</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.fish</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.fish</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>control structures requiring an end</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(function|while|if|else|switch|for|in|end)\b(?![?!])</string>
+			<string>(?&lt;!\.)\b(while|if|else|switch|for|in|end)\b(?![?!])</string>
 			<key>name</key>
 			<string>keyword.control.fish</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\bfunction\b(?![?!])</string>
-			<key>name</key>
-			<string>storage.type.fish</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -176,7 +208,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>builtin shellscript functions</string>
+			<string>builtin shell-script functions</string>
 			<key>match</key>
 			<string>(?x)\b(
 			_|__fish_append|__fish_bind_test1|__fish_bind_test2|__fish_commandline_test|
@@ -278,8 +310,8 @@
 				</dict>
 				<dict>
 					<key>comment</key>
-					<string>escapes a byte of data with the specified value (hexadecimal). 
-					If you are using a mutibyte encoding, this can be used to enter invalid strings. 
+					<string>escapes a byte of data with the specified value (hexadecimal).
+					If you are using a multibyte encoding, this can be used to enter invalid strings.
 					Only use this if you know what you are doing.</string>
 					<key>match</key>
 					<string>\\X[0-9a-fA-F]{2}</string>
@@ -356,7 +388,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(\$)(_|argv|history|HOME|PWD|status|USER)</string>
+					<string>(\$)(_|argv|history|HOME|PWD|status|USER)\b</string>
 					<key>name</key>
 					<string>variable.other.fixed.fish</string>
 				</dict>

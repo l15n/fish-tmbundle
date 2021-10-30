@@ -2,8 +2,77 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>contactEmailRot13</key>
+	<string>y.t.puva@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Leonard Chin</string>
+	<key>description</key>
+	<string>Support for &lt;a href="https://fishshell.com"&gt;fish&lt;/a&gt;, a smart and user-friendly command line
+shell.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>AF2C2749-1700-42D9-8BFE-91AA1854369B</string>
+			<string>------------------------------------</string>
+			<string>D4FE65A1-26D1-418F-9DE5-7C5D8B8E3D16</string>
+			<string>347805FF-E4E3-4D4E-A8C1-E6E85A7065AA</string>
+			<string>41FF72B3-940D-41F6-9DDC-A50F47E54264</string>
+			<string>ECE9045E-CD5E-432F-A81C-7C73219DB32F</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>347805FF-E4E3-4D4E-A8C1-E6E85A7065AA</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>EC263F13-E36B-4EF3-A8D4-9F0EE8077A95</string>
+					<string>3258ACED-81ED-4F85-ACF1-F5E2786F4F39</string>
+					<string>9CC4F53F-A44F-478A-89F9-5A8F7E4D9944</string>
+					<string>4B995A66-08C5-4AD5-A0E6-6595C7D0DA57</string>
+					<string>563513C5-AD5F-4764-8533-510E68E801E1</string>
+				</array>
+				<key>name</key>
+				<string>Functions</string>
+			</dict>
+			<key>41FF72B3-940D-41F6-9DDC-A50F47E54264</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>1A972AE7-147C-45B5-8A7E-7655585BD59D</string>
+					<string>526521B9-F9DE-4144-B405-E1A2B803A351</string>
+					<string>788CD946-7CC5-4448-AAE8-B01E6117896E</string>
+					<string>A6FDE04C-EDA6-4196-905C-521B24F8F34C</string>
+					<string>410367B4-8CF1-487C-AC82-93C7508F67EC</string>
+				</array>
+				<key>name</key>
+				<string>Loops</string>
+			</dict>
+			<key>D4FE65A1-26D1-418F-9DE5-7C5D8B8E3D16</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>822BD8F0-19A7-4D83-9503-6267A8442B60</string>
+					<string>DFB65488-C0D2-475D-89A6-6451E5EF76C4</string>
+				</array>
+				<key>name</key>
+				<string>Conditionals</string>
+			</dict>
+			<key>ECE9045E-CD5E-432F-A81C-7C73219DB32F</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>08744284-E27F-407E-B5F0-C1CE9AE4B343</string>
+					<string>E433B2FF-0A19-44AA-8297-C22DD3BCE569</string>
+					<string>EB37554A-4961-492E-8143-080D6A11F3C0</string>
+				</array>
+				<key>name</key>
+				<string>Misc</string>
+			</dict>
+		</dict>
+	</dict>
 	<key>name</key>
-	<string>fish shell</string>
+	<string>Fish</string>
 	<key>ordering</key>
 	<array>
 		<string>9CA6DB6F-A16F-4836-A058-617C7378775D</string>
