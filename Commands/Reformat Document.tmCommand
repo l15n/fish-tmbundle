@@ -36,6 +36,7 @@ FishIndent.reformat
 			<string>fish_indent</string>
 			<key>locations</key>
 			<array>
+				<string>/opt/homebrew/bin/fish_indent</string>
 				<string>/usr/local/bin/fish_indent</string>
 			</array>
 			<key>moreInfoURL</key>
